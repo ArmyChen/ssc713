@@ -1,0 +1,186 @@
+/*!
+ * Bootstrap v3.3.4 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ */
+ 
+
+button,input,select,textarea {
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+}
+
+.close {
+	float: right;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 1;
+	opacity: .2;
+	filter: alpha(opacity=20);
+}
+.close:focus,.close:hover {
+	color: #000;
+	text-decoration: none;
+	opacity: .5;
+	cursor: pointer;
+	filter: alpha(opacity=50);
+}
+
+button.close {
+	padding: 0;
+	border: 0;
+	background: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+.modal-open {
+	overflow: hidden;
+}
+
+.modal-title{ font-size:15px;}
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	outline: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+.modal.fade .modal-dialog {
+	-webkit-transition: -webkit-transform .3s ease-out;
+	-o-transition: -o-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	-webkit-transform: translate(0,-25%);
+	-o-transform: translate(0,-25%);
+	transform: translate(0,-25%);
+	-ms-transform: translate(0,-25%);
+}
+
+.modal.in .modal-dialog {
+	-webkit-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	transform: translate(0,0);
+	-ms-transform: translate(0,0);
+}
+
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal-dialog {
+	position: relative;
+	margin: 10px;
+	width: auto;
+}
+
+.modal-content {
+	position: relative;
+	outline: 0;
+	margin-top:100px;
+	border: 1px solid #999;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 6px;
+	background-color: #fff;
+	background-clip: padding-box;
+	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	-webkit-background-clip: padding-box;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.modal-header {
+	padding: 15px;
+	min-height: 16.43px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .close {
+	margin-top: -2px;
+}
+
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+
+.modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+.modal-footer {
+	padding: 15px;
+	border-top: 1px solid #e5e5e5;
+	text-align: right;
+}
+
+.modal-footer .btn+.btn {
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn+.btn {
+	margin-left: -1px;
+}
+
+.modal-footer .btn-block+.btn-block {
+	margin-left: 0;
+}
+
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	overflow: scroll;
+	width: 50px;
+	height: 50px;
+}
+
+@media(min-width:768px) {
+	.modal-dialog {
+		margin: 30px auto;
+		width: 600px;
+	}
+
+	.modal-content {
+		-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+		box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	}
+
+	.modal-sm {
+		width: 300px;
+	}
+}
+
+@media(min-width:992px) {
+	.modal-lg {
+		width: 900px;
+	}
+}

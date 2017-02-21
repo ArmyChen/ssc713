@@ -1,0 +1,19 @@
+该文件夹为存放的js，css，img等样式资源包。
+由于国外服务器网络出口小，宽带流量紧张的问题。
+开发者建议使用者，购买国内云存储服务或者国内空间。
+将该文件夹 “Template”存放于空间。
+在管理员后台设置好Template的链接，链接地址不含Template文件夹。
+存放时为整个根目录。
+例如链接地址为
+http://template.baidu.com/template/js/base/xxx.js
+那么后台设置的链接即为 http://template.baidu.com/ 或者 http://template.baidu.com
+空间存放目录结构为
+--   template
+  --js
+     --base
+     --comm
+  --css
+  --....
+---------------------------------------------------------
+
+
